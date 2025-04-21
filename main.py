@@ -3,7 +3,7 @@ from config import BOT_TOKEN
 from ton_api import get_wallet_balance
 from xp_system import add_xp, get_xp
 
-bot = Bot(token=BOT_TOKEN)
+bot = Bot(token=7534137870:AAHckWCsRJEG9zquCbu_VSxhz5czRwlmBek)
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
