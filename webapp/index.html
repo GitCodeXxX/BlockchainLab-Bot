@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlockchainLab MiniApp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {
+      background-color: #e5f4ff;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Willkommen zur BlockchainLab Mini-App</h2>
+  <p>XP: <span id="xp">...</span></p>
+  <button onclick="getXP()">Aktualisieren</button>
 
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.expand();
+
+    function getXP() {
+      document.getElementById("xp").innerText = Math.floor(Math.random() * 100);
+    }
+  </script>
+</body>
+</html>
